@@ -49,4 +49,5 @@ typedef struct {
 #define PIO_USB_HUB_PORT_CNT 8
 #define PIO_USB_ROOT_PORT_CNT 2
 
-#define PIO_USB_EP_SIZE 64
+// Changed value to ensure no overflows with StreamDeck
+#define PIO_USB_EP_SIZE 1024
